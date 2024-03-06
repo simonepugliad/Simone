@@ -1,0 +1,74 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TOTYS MENORCA</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+</head>
+    
+    <body>
+        <div class="arriba">
+            <div class="titugo">
+        <h1 class="titulo">TOTYS MENORCA</h1>
+            </div>
+        <div class="container">
+            <input type="text" id="input" placeholder="AÑADE ALGO">
+            <button id="Boton">OK</button>
+            <ul id="posicionesdefutbol"></ul>
+        </div>
+        <script type="module" src="./index.js"></script>
+        </div>
+        <div class="estadio" >
+            <div class="grada">
+                <div class="campo">
+                    <div class="contenedor-porteria">
+                        <div class="porteria porteria-izquierda"></div>
+                    </div>
+                    <div class="izquierda">
+                        <div class="corner corner-superior"></div>
+                        <div class="area">
+                            <div class="area-pequena">
+                            </div>
+                            <div class="punto-penalty"></div>
+                            <div class="arco"></div>
+                        </div>
+                        <div class="corner corner-inferior"></div>
+                    </div>
+                    <div class="circulo-central"></div>
+                    <div class="derecha">
+                        <div class="corner corner-superior"></div>
+                        <div class="area">
+                            <div class="area-pequena">
+                            </div>
+                            <div class="punto-penalty"></div>
+                            <div class="arco"></div>
+                        </div>
+                        <div class="corner corner-inferior"></div>
+                    </div>
+                    <div class="contenedor-porteria">
+                        <div class="porteria porteria-derecha"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ </body>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+
+  $( function() {
+    setInterval(function(){
+        $( ".drag" ).draggable();
+    },1000);
+    })
+    
+  </script>
+    </html>
+
+
